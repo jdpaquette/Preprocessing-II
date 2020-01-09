@@ -1,1 +1,28 @@
 // Navigation Styles here
+.navigation {
+    margin: 0 auto;
+    width: 100%;
+    .box-size(10vh, 100%);
+    .flex-layout(space-evenly, center);
+    .logo {
+        width: 25%;
+    }
+    .navbar {
+        width: 25%;
+        .flex-layout(flex-end, center);
+        nav {
+            .flex-layout(space-evenly, center);
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.6rem;
+                padding-left: 2%;
+                padding-right: 5%;
+            }
+        }
+    }
+
+}
+hr {
+    border-bottom: 2px dashed @navigation-border;
+}
