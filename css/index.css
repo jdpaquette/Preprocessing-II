@@ -1,1 +1,410 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+.navbar .logo {
+  width: 25%;
+  margin: auto;
+}
+.navbar .nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.75rem;
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    padding-top: 3%;
+    height: 10vh;
+    width: 100%;
+  }
+  .navbar .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar .nav-links {
+    width: 75%;
+    margin-bottom: 0;
+  }
+}
+hr {
+  border-top: none;
+  border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 0;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home header img {
+  padding-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .home header {
+    width: 75%;
+    margin: auto;
+  }
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+  }
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    flex-direction: column;
+    align-content: center;
+    width: 75%;
+    margin: auto;
+    padding-top: 5%;
+  }
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    flex-direction: column;
+    align-content: center;
+    width: 75%;
+    margin: auto;
+  }
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+  }
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-pick .btn {
+  color: #FFFFFF;
+  height: 4.4rem;
+  width: 100%;
+  background-color: #0f6674;
+  font-size: 2rem;
+  line-height: 4.4rem;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.home .content-pick .btn:hover {
+  background-color: #FFEBCD;
+  color: #17A2B8;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column-reverse;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .home .content-pick .btn {
+    background-color: #17A2B8;
+    margin-bottom: 10%;
+  }
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin: 0 0 30px 0;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    align-content: center;
+    width: 65%;
+    margin: auto;
+  }
+}
+.home #Contact {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+}
+.home #Contact h3 {
+  padding: 1% 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+.home #Contact p {
+  padding-bottom: 2%;
+  text-align: center;
+}
+.home #Contact input[type=text],
+.home #Contact input[type=email],
+.home #Contact textarea,
+.home #Contact #excursion {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #FFEBCD;
+  /* Gray border */
+  border-radius: 10px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.home #Contact input[type=submit] {
+  border: none;
+  margin-bottom: 5%;
+  color: #FFFFFF;
+  height: 4.4rem;
+  width: 100%;
+  background-color: #0f6674;
+  font-size: 2rem;
+  line-height: 4.4rem;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.home #Contact input[type=submit]:hover {
+  background-color: #FFEBCD;
+  color: #17A2B8;
+}
+@media (max-width: 500px) {
+  .home #Contact input[type=submit] {
+    background-color: #17A2B8;
+    margin-bottom: 10%;
+  }
+}
