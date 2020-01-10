@@ -15,19 +15,16 @@
 </head>
 
 <body>
-  <div class="navigation">
-    <div class="logo ">
-      <h1>Fun Bus</h1>
-    </div>
-    <div class="navbar">
-      <nav>
-        <a href="#Home">Home</a>
-        <a href="#About">About Us</a>
-        <a href="#Blog">Blog</a>
-        <a href="#Contact">Contact</a>
-      </nav>
-    </div>
-  </div>
+  <nav class="navbar">
+    <div class="logo"><h1>Fun Bus</h1></div>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">About Us</a></li>
+      <li class="nav-item"><a href="#">Blog</a></li>
+      <li class="nav-item"><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <hr>  
   <div class="container home">
 
@@ -84,7 +81,39 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+    <section id="Contact"> <!-- contact form -->
+      <div class="contact-form">
+        <h4>Contact Me:</h4>
+        <p>If you have any questions about the above excursions - let me know.</p>
+        <form action="action_page.php">
+      
+          <label for="fname"></label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      
+          <label for="lname"></label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Your email address..">
+
+          <label for="excursion"></label>
+          <select id="excursion" name="excursion">
+            <option value="pick">pick your excursion...</option>
+            <option value="sun">Fun in the Sun</option>
+            <option value="mountain">Mountain Excursion</option>
+            <option value="island">Island Getaway</option>
+          </select>
+      
+          <label for="subject"></label>
+          <textarea id="subject" name="subject" placeholder="What questions do you have..." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit Your Question">
+      
+        </form>
+      </div>
   </div><!-- container -->
+
+
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>

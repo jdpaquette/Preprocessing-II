@@ -168,36 +168,45 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navigation {
-  margin: 0 auto;
-  height: 10vh;
-  width: 100%;
+.navbar {
+  height: 5vh;
+  width: 75%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
-.navigation .logo {
+.navbar .logo {
   width: 25%;
 }
-.navigation .navbar {
-  width: 25%;
+.navbar .nav-links {
+  background-color: red;
+  width: 75%;
+  margin: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
-.navigation .navbar nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.navigation .navbar nav a {
+.navbar .nav-links a {
   text-decoration: none;
   color: black;
-  font-size: 1.6rem;
-  padding-left: 2%;
-  padding-right: 5%;
+  font-size: 1.75rem;
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    padding-top: 3%;
+    height: 15vh;
+    width: 100%;
+  }
+  .navbar .logo {
+    width: 100%;
+    text-align: center;
+  }
 }
 hr {
+  border-top: none;
   border-bottom: 2px dashed #C0C0C0;
 }
 .footer {
@@ -211,19 +220,53 @@ hr {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home header img {
+  padding-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .home header {
+    width: 75%;
+    margin: auto;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    flex-direction: column;
+    width: 75%;
+    align-content: center;
+    margin: auto;
+    padding-top: 5%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    flex-direction: column;
+    width: 75%;
+    align-content: center;
+    margin: auto;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -231,6 +274,14 @@ hr {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-content: center;
+    margin: auto;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -253,7 +304,100 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick .btn {
+  border: 1px solid gray;
+  border-radius: 15px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #117a8b;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+  .home .content-pick .btn {
+    background-color: #17A2B8;
+    margin-bottom: 10%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    align-content: center;
+    width: 65%;
+    margin: auto;
+  }
+}
+.home #Contact {
+  width: 75%;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* Add a background color and some padding around the form */
+}
+.home #Contact h3 {
+  padding: 1% 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+.home #Contact p {
+  padding-bottom: 2%;
+  text-align: center;
+}
+.home #Contact input[type=text],
+.home #Contact input[type=email],
+.home #Contact textarea,
+.home #Contact #excursion {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #FFEBCD;
+  /* Gray border */
+  border-radius: 10px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.home #Contact input[type=submit] {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 15px;
+  height: 40px;
+  text-align: center;
+  padding-top: 6px;
+  background-color: #117a8b;
+  color: #FFFFFF;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home #Contact input[type=submit] {
+    background-color: #17A2B8;
+    margin-bottom: 10%;
+  }
+}
+.home #Contact input[type=submit]:hover {
+  background-color: #E28F41;
+  color: white;
+}
+.home #Contact .contact-form {
+  border-radius: 50px;
+  padding: 20px;
+  margin: 2% 0;
 }

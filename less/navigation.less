@@ -1,28 +1,37 @@
 // Navigation Styles here
-.navigation {
-    margin: 0 auto;
-    width: 100%;
-    .box-size(10vh, 100%);
-    .flex-layout(space-evenly, center);
+.navbar {
+    .box-size(5vh, 75%);
+    .flex-layout(space-between, center);
     .logo {
         width: 25%;
     }
-    .navbar {
-        width: 25%;
-        .flex-layout(flex-end, center);
-        nav {
-            .flex-layout(space-evenly, center);
-            a {
-                text-decoration: none;
-                color: black;
-                font-size: 1.6rem;
-                padding-left: 2%;
-                padding-right: 5%;
-            }
+    .nav-links {
+        background-color: red;
+        width: 75%;
+        margin: auto;
+        .flex-layout(space-between, center);
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.75rem;
         }
-    }
 
+    }
+    @media @mobile {
+ 
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        margin: auto;
+        padding-top: 3%;
+        .box-size(15vh, 100%);
+        .logo {
+            width: 100%;
+            text-align: center;
+        }
+      }
 }
 hr {
+    border-top: none;
     border-bottom: 2px dashed @navigation-border;
 }
