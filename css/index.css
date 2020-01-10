@@ -169,22 +169,23 @@ img {
   margin: 0 auto;
 }
 .navbar {
-  height: 5vh;
-  width: 75%;
+  height: 10vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 4%;
 }
 .navbar .logo {
   width: 25%;
+  margin: auto;
 }
 .navbar .nav-links {
-  background-color: red;
-  width: 75%;
-  margin: auto;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 .navbar .nav-links a {
   text-decoration: none;
@@ -197,17 +198,22 @@ img {
     align-content: center;
     margin: auto;
     padding-top: 3%;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
   }
   .navbar .logo {
     width: 100%;
     text-align: center;
   }
+  .navbar .nav-links {
+    width: 75%;
+    margin-bottom: 0;
+  }
 }
 hr {
   border-top: none;
   border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 0;
 }
 .footer {
   width: 100%;
@@ -250,8 +256,8 @@ hr {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     flex-direction: column;
-    width: 75%;
     align-content: center;
+    width: 75%;
     margin: auto;
     padding-top: 5%;
   }
@@ -263,8 +269,8 @@ hr {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     flex-direction: column;
-    width: 75%;
     align-content: center;
+    width: 75%;
     margin: auto;
   }
 }
@@ -278,8 +284,8 @@ hr {
 @media (max-width: 500px) {
   .home .inverse-content {
     flex-direction: column-reverse;
-    width: 100%;
     align-content: center;
+    width: 100%;
     margin: auto;
   }
 }
@@ -305,20 +311,26 @@ hr {
   justify-content: space-between;
 }
 .home .content-pick .btn {
-  border: 1px solid gray;
-  border-radius: 15px;
-  height: 40px;
-  text-align: center;
-  padding-top: 10px;
-  background-color: #117a8b;
   color: #FFFFFF;
+  height: 4.4rem;
+  width: 100%;
+  background-color: #0f6674;
   font-size: 2rem;
+  line-height: 4.4rem;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.home .content-pick .btn:hover {
+  background-color: #FFEBCD;
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-content: center;
     width: 100%;
+    margin: auto;
   }
   .home .content-pick .btn {
     background-color: #17A2B8;
@@ -327,7 +339,7 @@ hr {
 }
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -338,12 +350,11 @@ hr {
 }
 .home #Contact {
   width: 75%;
+  margin: auto;
   text-align: center;
   align-items: center;
-  margin: auto;
   /* Style inputs with type="text", select elements and textareas */
   /* Style the submit button with a specific background color etc */
-  /* Add a background color and some padding around the form */
 }
 .home #Contact h3 {
   padding: 1% 0;
@@ -375,29 +386,25 @@ hr {
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
 }
 .home #Contact input[type=submit] {
-  width: 100%;
-  border: 1px solid gray;
-  border-radius: 15px;
-  height: 40px;
-  text-align: center;
-  padding-top: 6px;
-  background-color: #117a8b;
+  border: none;
+  margin-bottom: 5%;
   color: #FFFFFF;
+  height: 4.4rem;
+  width: 100%;
+  background-color: #0f6674;
   font-size: 2rem;
+  line-height: 4.4rem;
+  border-radius: 15px;
+  text-align: center;
   cursor: pointer;
+}
+.home #Contact input[type=submit]:hover {
+  background-color: #FFEBCD;
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home #Contact input[type=submit] {
     background-color: #17A2B8;
     margin-bottom: 10%;
   }
-}
-.home #Contact input[type=submit]:hover {
-  background-color: #E28F41;
-  color: white;
-}
-.home #Contact .contact-form {
-  border-radius: 50px;
-  padding: 20px;
-  margin: 2% 0;
 }

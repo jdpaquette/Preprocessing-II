@@ -1,22 +1,24 @@
 // Navigation Styles here
 .navbar {
-    .box-size(5vh, 75%);
+    .box-size(10vh, 100%);
     .flex-layout(space-between, center);
+    padding: 0 4%;
     .logo {
         width: 25%;
+        margin: auto;
     }
     .nav-links {
-        background-color: red;
-        width: 75%;
-        margin: auto;
+        width: 40%;
         .flex-layout(space-between, center);
+        margin: auto;
+
         a {
             text-decoration: none;
             color: black;
             font-size: 1.75rem;
         }
-
     }
+
     @media @mobile {
  
         flex-direction: column;
@@ -24,14 +26,19 @@
         align-content: center;
         margin: auto;
         padding-top: 3%;
-        .box-size(15vh, 100%);
+        .box-size(10vh, 100%);
         .logo {
             width: 100%;
             text-align: center;
+        }
+        .nav-links {
+            width: 75%;
+            margin-bottom: 0;
         }
       }
 }
 hr {
     border-top: none;
     border-bottom: 2px dashed @navigation-border;
+    margin-bottom: 0;
 }
